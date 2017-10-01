@@ -1,3 +1,4 @@
 default: all
 all:
-	apt-get source linux-image
+	git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+	cd linux; git checkout v3.16
